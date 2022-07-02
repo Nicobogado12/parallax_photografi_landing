@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paralax photoshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <img src="img/first.jpg" id="first" alt="fondo de bosque">
+        <img src="img/last.png"  alt="montaña_movimiento">
+        <h1 id="text">Sueña</h1>
+    </section>
+    
+    
+
+    <div class="ab-text">
+        <div class="heading">
+            <h2>Fotografia</h2>
+            <p>Como diseñador y programador independiente, apasionado, acerco este diseño con efecto tendencia de los ultimos tiempos</p>
+        </div>
+
+
+        <div class="container">
+
+            <div class="box box1">
+                <div class="in">
+                    <p>like</p>
+                </div>
+            </div>
+
+            <div class="box box2">
+                <div class="in">
+                    <p>commet</p>
+                </div>
+            </div>
+
+            <div class="box box3">
+                <div class="in">
+                    <p>share&</p>
+                </div>
+            </div>
+
+            <div class="box box4">
+                <div class="in">
+                    <p>subcribe</p>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <p> 2022. diseño con paralax</p>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+
+
+    <script>
+        let first= document.getElementById("first");
+        let last= document.getElementById("last");
+        let text= document.getElementById("text");
+
+        window.addEventListener(`scroll`, function(){
+            let value = window.scrollY;
+
+            first.style.top = value * 0.7 + "px";
+            last.style.bottom = value * 0.5 + "px";
+            text.style.top = value * 1 + "px";
+        })
+    </script>
+</body>
+</html> 
